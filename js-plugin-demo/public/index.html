@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head lang='en'>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <title>js plugin demo</title>
+
+  <style>
+    .button {
+      width: 180px;
+      padding: 4px 0;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 3px;
+
+      background: transparent; outline: none;
+      border: 2px solid #111;
+      padding: 15px 50px;
+      overflow: hidden;
+    }
+
+    .button:hover {
+      transition: all 150ms linear;
+
+      box-shadow: 1px 1px 7px gray;
+    }
+
+  </style>
+</head>
+
+<body>
+  <button type="button" class="button" id="import-data-button">
+    Import Data
+  </button>
+  <script src='bundle.js'></script>
+</body>
+
+</html>
